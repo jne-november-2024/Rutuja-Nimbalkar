@@ -118,3 +118,85 @@ return ac+currentvalue;
 
 console.log(sum1);
 console.log(sum2);
+//flat and flatMap
+
+let str=['msg to','xyz wc','to team'];
+
+let resultMap1=str.map( value=>{
+    return value.split(' ');
+}
+
+);
+let resultMap=resultMap1.flat();
+
+console.log(resultMap);
+
+let az=str.flatMap(value=>value.split(' '))
+
+console.log(az);
+
+
+// every some
+
+let number=[1,2,3,4,5];
+let allPosi=number.every(value=>value>0)
+console.log(allPosi);
+
+
+let  anyNeg=number.some(value=>value<0)
+console.log(anyNeg);
+
+console.log(number.concat(num,str))
+console.log(number);
+console.log(number.at(-1));
+
+number.copyWithin(2,0,2) // tagert strat end
+console.log(number)
+
+//number.find() callback retrun first result
+console.log(number.toString());
+
+
+
+let name3='Rutuja';
+
+for(let i  of name3){
+    console.log(i);
+}
+
+
+for(let i  of num){
+    console.log(i);
+}
+
+for(let key in person){
+ console.log(key);
+ console.log(`${key} and ${person[key]}`);
+}
+
+console.log(num);
+console.log(num.at(4));
+
+
+let final=person.map(
+    value=>{
+        return{
+        ...value,
+        email:'QQ'
+        }
+    }
+)
+
+let final1=number.map(
+    value=>value*10
+)
+
+console.log(final);
+console.log(final1);
+
+
+let final3=number.reduce((ac,cu)=>{
+    return ac+cu;
+})
+
+console.log(final3);
