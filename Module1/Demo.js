@@ -200,3 +200,47 @@ let final3=number.reduce((ac,cu)=>{
 })
 
 console.log(final3);
+
+
+function a(){
+    let first='Welcome';
+    console.log('Outer');
+
+    function b(){
+        console.log('inner');
+        console.log(first);
+    }
+b();
+}
+a();
+
+let p=new Promise(
+(resolve,reject)=>{
+    let pin=11;
+    if(pin==11){
+        resolve('Sucess')
+    }else{
+        reject('fail')
+    }
+}
+
+)
+
+p.then(msg=>{
+    console.log(msg);
+}).catch(
+    err=>{
+        console.log(err);
+    }
+)
+
+
+
+function fact(num){
+    //if(num=0 || num=1){return 1;}
+   // num*fact(num-1);
+  fact(num-1)
+}
+
+fact(7);
+console.log(fact(2));

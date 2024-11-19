@@ -65,5 +65,77 @@ const ob4={...ob3, ...ob5}
 console.log(ob4)
 
 
+const person1={
+    fullName:'Rutuja Nimbalkar',
+    score:90,
+    getScore:function(){
+      console.log(this.score);
+    }
+}
+
+person1.getScore();
+
+let data='secure';
+class Info{
+   
+
+    constructor(name,email){
+
+        this.name=name,
+        this.email=email
+    }
+
+    viewInfo(){
+        console.log('name: ',this.name,'email : ',this.email,' ',data)
+    }
+}
+
+const obj1=new Info('Rutuja','rutu@gamil.com');
+
+const obj2=new Info('Rutu','rutu@gmail');
+
+obj1.viewInfo();
+obj2.viewInfo();
+
+
+
+
+class Admin extends Info{
+constructor(name,mail){
+
+    super(name,mail);
+
+}
+
+
+    editData(data){
+        super.data=data;
+    }
+
+}
+
+const obj3= new Admin('admin','admin@gmail.com');
+obj3.editData('abc');
+console.log(obj3);
+
+
+
+
+const destruct={
+ a:'a',
+ b:'b',
+ c:'c'
+
+}
+console.log(destruct.a);
+// const{}=destruct;
+
+const{c}=destruct;
+console.log(c);
+
+const{c:third}=destruct;
+console.log(third);
+
+
 
 
