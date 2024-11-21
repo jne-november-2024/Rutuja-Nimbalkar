@@ -1,13 +1,20 @@
 package com.think.rest.webservices.restful_web.user;
 
-import jakarta.validation.constraints.NotNull;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
 
+@Entity(name = "user_details")
 public class User {
 
+   // @JacksonXmlProperty(localName = "id")
+    @Id
+    @GeneratedValue
     private int id;
     @Size(min = 2,message = "Name should have At least size is 2")
     private String name;
