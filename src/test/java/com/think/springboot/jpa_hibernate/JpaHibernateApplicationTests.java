@@ -1,10 +1,10 @@
-package com.think.rest.webservices.restful_web;
+package com.think.springboot.jpa_hibernate;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RestfulWebApplicationTests {
+class JpaHibernateApplicationTests {
 
 	@Test
 	void contextLoads() {
