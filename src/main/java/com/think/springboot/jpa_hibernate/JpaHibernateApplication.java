@@ -1,13 +1,13 @@
-package com.think.rest.webservices.restful_web;
+package com.think.springboot.jpa_hibernate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RestfulWebApplication {
+public class JpaHibernateApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestfulWebApplication.class, args);
+		SpringApplication.run(JpaHibernateApplication.class, args);
 	}
 
 }
